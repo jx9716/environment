@@ -1,0 +1,13 @@
+
+# Setup GPIO for audio output
+echo 17 > /sys/class/gpio/export
+echo out > /sys/class/gpio/gpio17/direction
+echo 0 > /sys/class/gpio/gpio17/value
+chmod 666 /sys/class/gpio/gpio17/value
+
+# Set /ram to be fully accessible
+chmod 777 /ram
+
+# Create stat directory for process status
+mkdir /ram/stat
+chmod 777 /ram/stat

@@ -1,0 +1,9 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+/dev/mmcblk0p1  /boot           vfat    defaults        0       0
+proc            /proc   proc    defaults        0       0
+none            /var/tmp tmpfs  size=1M,noatime 0       0
+none            /tmp    tmpfs   size=1M,noatime 0       0
+none            /ram    ramfs   size=1M,noatime 0       0

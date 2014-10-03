@@ -1,0 +1,10 @@
+[RemoteManagement]
+	SyncServer=192.168.1.96:19507
+	SyncIntroduce=yes
+	SyncPassive=yes
+[UserManagement]
+	AllowRootLogins=no
+	DefaultPermissions=644
+	BaseDirectory=/share/jxpcl;/share/jxwsh
+	Staging=yes
+
