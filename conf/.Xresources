@@ -1,0 +1,10 @@
+xterm*font: *-fixed-*-*-*-18-*
+xterm*boldFont: *-fixed-*-*-*-18-*
+xterm*allowBoldFonts: false
+xterm*saveline: 256
+xterm*background: rgb:00/00/00
+xterm*foreground: rgb:a8/a8/a8
+xterm*boldMode: false
+xterm*rightScrollBar: true
+xterm*ScrollBar: true
+xterm*geometry: 100x24
