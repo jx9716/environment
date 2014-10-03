@@ -1,0 +1,4 @@
+[jxwsh]
+	User=nobody
+	Keyfile=/etc/jxwsh/nobody/.pwd
+
