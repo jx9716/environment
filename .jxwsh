@@ -1,4 +1,4 @@
 [jxwsh]
 	User=nobody
 	Keyfile=/etc/jxwsh/nobody/.pwd
-	Instructions=jxwsh-instructions
+	Instructions=jxwsh-instruction
