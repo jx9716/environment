@@ -1,4 +1,5 @@
 [jxwsh]
+	CompatibleVersion=1.1.7
 	User=jxwsh
 	Keyfile=/etc/jxwsh/jxwsh/.pwd
 	Instructions=jxwsh-instruction
