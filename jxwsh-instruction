@@ -1,0 +1,50 @@
+JXWSH ^struct HandshakeInstruction:
+	byte[4] magic,
+	byte[32] signature,
+	uint16 checksum;
+	
+JXWSH ^struct KeyExchangeChallenge:
+	JXWSH_RSA_KEY publicKey,
+	uint64 checksum;
+	
+JXWSH ^struct KeyExchangeResponse:
+	JXWSH_RSA_KEY publicKey,
+	JXWSH_INTERNAL_KEY sharedSecret,
+	uint64 checksum;
+	
+JXWSH ^struct Report:
+	uint32 reportId,
+	uint32 size,
+	UNDETERMINED byte* data;
+	
+JXWSH ^struct Ping:
+	byte[4] magic,
+	byte[4] pong;
+	
+JXWSH ^struct AcquirePrivilegesRequest:
+	byte[4] magic,
+	uint64 token,
+	JXWSH_PASSWD passwd,
+	uint64 checksum;
+	
+JXWSH ^struct Passwd:
+	byte[4] magic,
+	JXWSH_PASSWD auth,
+	JXWSH_PASSWD passwd,
+	uint64 checksum;
+	
+JXWSH ^struct DataPacket:
+	byte[4] magic,
+	JXWSH_PASSWD auth,
+	UNDETERMINED byte* data;
+	
+use (
+	HandshakeInstruction,
+	KeyExchangeChallenge,
+	KeyExchangeResponse,
+	Report,
+	Ping,
+	AcquirePrivilegesRequest,
+	Passwd,
+	DataPacket
+)
